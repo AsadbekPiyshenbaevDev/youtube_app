@@ -11,3 +11,49 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+a{
+  text-decoration: none;
+  color: black;
+}
+::-webkit-scrollbar{
+  width: 0px;
+  height: 1px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(114,113,113);
+  border-radius: 10px;
+  height: 100px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.search-bar {
+  border: none;
+  outline: none;
+  width: 350px;
+}
+.category-btn {
+  font-weight: bold !important;
+  border: none;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+  padding: 7px 15px;
+  transition: all .3s ease;
+  margin-bottom: 10px;  
+}
+.category-btn:hover {
+  background-color: #76323f !important;
+  color: white !important;
+}
+.category-btn:hover span {
+  color: white !important;
+}
+@media (max-width:600px) {
+  .search-bar {
+    width: 200px;
+  }
+}
